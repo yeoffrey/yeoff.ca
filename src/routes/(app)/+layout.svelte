@@ -38,17 +38,11 @@
 			<div class="flex flex-col items-start gap-2">
 				{#each SITE_LINKS as { href, label } (label)}
 					{@const disabled = label !== 'home'}
-					<div class="flex items-center gap-2">
-						<a
-							{href}
-							class={`font-logo text-4xl font-medium tracking-wider underline-offset-4 hover:underline ${disabled ? 'pointer-events-none cursor-not-allowed opacity-50' : ''}`}
-							>{label}
-						</a>
-						{#if label !== 'home'}<Badge
-								variant="secondary"
-								class="bg-blue-500 text-white opacity-50 dark:bg-blue-600">Soon</Badge
-							>{/if}
-					</div>
+					<a
+						{href}
+						class={`font-logo text-4xl font-medium tracking-wider underline-offset-4 hover:underline ${disabled ? 'pointer-events-none cursor-not-allowed opacity-50' : ''}`}
+						>{label}
+					</a>
 				{/each}
 			</div>
 
