@@ -10,7 +10,7 @@
 <!-- Navigation bar for small screens -->
 <div class="lg:hidden">
 	<div class="flex h-16 flex-row items-center justify-between bg-background px-6">
-		<span class="font-logo text-4xl">yeoff.to</span>
+		<span class="font-logo text-4xl">yeoff.ca</span>
 		<div class="flex flex-row items-center gap-4">
 			<ThemeToggle />
 			<MobileNav />
@@ -28,7 +28,7 @@
 	>
 		<aside class="flex w-1/5 flex-col justify-between">
 			<div class="flex flex-col gap-8">
-				<span class="font-logo text-6xl">yeoff.to</span>
+				<span class="font-logo text-6xl">yeoff.ca</span>
 				<span class="text-muted-foreground"
 					>A software developer and film composer based in Toronto.</span
 				>
