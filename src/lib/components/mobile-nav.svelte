@@ -30,10 +30,13 @@
 			<!-- Main Links -->
 			<div class="flex flex-col items-start gap-8">
 				{#each SITE_LINKS as { href, label } (label)}
-					<a {href} class="font-logo text-5xl font-medium tracking-wider"
-						>{label}
-						{#if label !== 'home'}<div>Soon</div>{/if}</a
+					{@const disabled = label !== 'home'}
+					<a
+						{href}
+						class={`font-logo text-5xl font-medium tracking-wider underline-offset-4 hover:underline ${disabled ? 'pointer-events-none cursor-not-allowed opacity-50' : ''}`}
 					>
+						{label}
+					</a>
 				{/each}
 			</div>
 		</div>
