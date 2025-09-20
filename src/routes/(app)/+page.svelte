@@ -24,7 +24,7 @@
 	>
 	or
 	<a class="underline underline-offset-4" href="https://www.linkedin.com/in/yeoffrey/">LinkedIn</a>
-	pages for now. You can also view a copy of my "professional" resume
+	pages for now. You can also view a copy of my "professional"
 	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-	<a class="underline underline-offset-4" href="./resume.pdf">href</a>.
+	<a class="underline underline-offset-4" href="./resume.pdf">resume</a>.
 </p>

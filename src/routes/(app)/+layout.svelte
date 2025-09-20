@@ -22,14 +22,14 @@
 </div>
 
 <!-- Sidebar layout for large screens -->
-<div class="hidden items-center justify-center p-16 lg:flex">
+<div class="hidden flex-col items-center justify-center gap-2 p-16 lg:flex">
 	<div
 		class="flex h-[80vh] max-w-[85%] gap-4 rounded-xl border-7 border-double p-16 shadow-2xl shadow-accent"
 	>
 		<aside class="flex w-1/5 flex-col justify-between">
 			<div class="flex flex-col gap-8">
 				<span class="font-logo text-6xl">yeoff.ca</span>
-				<span class="text-muted-foreground"
+				<span class="text-sm text-muted-foreground"
 					>A software developer and film composer based in Toronto.</span
 				>
 			</div>
@@ -41,7 +41,7 @@
 					<div class="flex items-center gap-2">
 						<a
 							{href}
-							class={`font-logo text-4xl font-medium tracking-wider hover:underline ${disabled ? 'pointer-events-none cursor-not-allowed opacity-50' : ''}`}
+							class={`font-logo text-4xl font-medium tracking-wider underline-offset-4 hover:underline ${disabled ? 'pointer-events-none cursor-not-allowed opacity-50' : ''}`}
 							>{label}
 						</a>
 						{#if label !== 'home'}<Badge
@@ -62,4 +62,12 @@
 			</div>
 		</main>
 	</div>
+	<footer>
+		<span class="text-sm text-muted-foreground"
+			>&copy; 2025 Geoffrey Belcher. All rights reserved. Source code <a
+				class="underline underline-offset-4"
+				href="https://github.com/yeoffrey/yeoff.ca">here</a
+			>.</span
+		>
+	</footer>
 </div>
