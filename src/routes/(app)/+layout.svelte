@@ -2,7 +2,6 @@
 	import type { LayoutProps } from './$types';
 	import { MobileNav, Moi, ThemeToggle } from '$lib/components';
 	import { SITE_LINKS } from '$lib/constants';
-	import { Badge } from '$lib/components/ui/badge';
 
 	let { children }: LayoutProps = $props();
 </script>
